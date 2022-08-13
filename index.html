@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
         <title>Babylon.js sample code</title>
@@ -83,6 +85,8 @@
     BABYLON.SceneLoader.ImportMesh("", Assets.meshes.Yeti.rootUrl, Assets.meshes.Yeti.filename, scene, function(newMeshes){
     newMeshes[0].scaling = new BABYLON.Vector3(0.1, 0.1, 0.1);
     });
+            
+    <babylon model = "scene.babylon"></babylon>
     return scene;
 };
                 window.initFunction = async function() {
